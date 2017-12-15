@@ -1,0 +1,12 @@
+{
+     "name": "bigSubStr",
+     "algRes": {
+          "boyerMoor": 683,
+          "codeSum": 467,
+          "dka": 7874,
+          "bruteForce": 1265,
+          "codeSquareSum": 784,
+          "rabinKarp": 638
+     }
+}
+

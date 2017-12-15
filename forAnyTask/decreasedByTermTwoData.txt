@@ -1,0 +1,10 @@
+[
+    "{\n     \"name\": \"text with 13064698 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 459,\n          \"codeSum\": 500,\n          \"dka\": 1508,\n          \"bruteForce\": 1381,\n          \"codeSquareSum\": 733,\n          \"rabinKarp\": 643\n     }\n}",
+    "{\n     \"name\": \"text with 6532349 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 269,\n          \"codeSum\": 378,\n          \"dka\": 954,\n          \"bruteForce\": 707,\n          \"codeSquareSum\": 473,\n          \"rabinKarp\": 430\n     }\n}",
+    "{\n     \"name\": \"text with 3266174 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 130,\n          \"codeSum\": 158,\n          \"dka\": 490,\n          \"bruteForce\": 363,\n          \"codeSquareSum\": 220,\n          \"rabinKarp\": 154\n     }\n}",
+    "{\n     \"name\": \"text with 1633087 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 66,\n          \"codeSum\": 84,\n          \"dka\": 221,\n          \"bruteForce\": 181,\n          \"codeSquareSum\": 101,\n          \"rabinKarp\": 72\n     }\n}",
+    "{\n     \"name\": \"text with 816543 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 34,\n          \"codeSum\": 36,\n          \"dka\": 117,\n          \"bruteForce\": 89,\n          \"codeSquareSum\": 54,\n          \"rabinKarp\": 35\n     }\n}",
+    "{\n     \"name\": \"text with 408271 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 17,\n          \"codeSum\": 21,\n          \"dka\": 51,\n          \"bruteForce\": 43,\n          \"codeSquareSum\": 24,\n          \"rabinKarp\": 18\n     }\n}",
+    "{\n     \"name\": \"text with 204135 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 8,\n          \"codeSum\": 10,\n          \"dka\": 23,\n          \"bruteForce\": 22,\n          \"codeSquareSum\": 12,\n          \"rabinKarp\": 9\n     }\n}",
+    "{\n     \"name\": \"text with 102067 elements\",\n     \"algRes\": {\n          \"boyerMoor\": 4,\n          \"codeSum\": 5,\n          \"dka\": 11,\n          \"bruteForce\": 11,\n          \"codeSquareSum\": 7,\n          \"rabinKarp\": 4\n     }\n}"
+]
