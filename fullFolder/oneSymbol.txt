@@ -1,0 +1,10 @@
+{
+     "algRes": {
+          "boyerMoor": 112.7,
+          "codeSum": 408.6,
+          "dka": 1204,
+          "bruteForce": 628.8,
+          "codeSquareSum": 526.8,
+          "rabinKarp": 352.9
+     }
+}

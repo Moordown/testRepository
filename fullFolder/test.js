@@ -12,6 +12,13 @@ const textFileName = "hugeText.txt";
 const dataFileName = "data.txt"; 
 const plotDataFileName = "plotData.txt";
 
+
+const keyLetter = "a";
+const endLetter = "b";
+
+const mainSymbolRepeating = 10000000;
+const patternSize = 100;
+
 function Algorithms() {	
 	this.boyerMoor = function boyerMoor(s, p) {
 		return bm.boyerMoor(s, p);
@@ -87,6 +94,31 @@ function decreaseData(algorithms, text, retreatment = 1000000)
 	}
 	return ans;
 } 
+function textFromOneSymbol(algorithms, symbol, pattern, count = 10)
+{
+	var text = symbol.repeat(mainSymbolRepeating);
+	var curTest = new Container();
+	var allTime = 0;
+	for(alg in algorithms)
+	{
+		var startTempTime = new Date();
+		for(var i=0; i<count; i++)
+		{
+			algorithms[alg](text, keyWord);
+		}
+		var endTempTime = (new Date()) - startTempTime;
+		curTest.algRes[alg] = endTempTime / count;
+		allTime += (endTempTime / count);
+	}
+	for(alg in algorithms)
+		curTest.algRes[alg] = curTest.algRes[alg] / allTime;
+	return JSON.stringify(curTest, "", 5);
+}
+
+/* -b cоответсвует поиску большого текста
+ * -d соотвутсвует уменьшению текста
+ * -r соответсвует случаю с повторяющейся буквой в исходном тексте
+ */
 
 function main()
 {
@@ -123,7 +155,19 @@ function main()
 			process.exit(1);
 		}
 		process.exit(0);
+	} else if (key === '-r')
+	{
+		var pattern = keyLetter.repeat(patternSize);
+		var ans = textFromOneSymbol(new Algorithms(), keyLetter, pattern);
+		try{
+			fs.writeFileSync("histpOneSymbol.txt", ans, 'utf-8');
+		} catch (exp) {
+			console.error(exp.message);
+			process.exit(1);
+		}
+		process.exit(0);
 	}
+
 	try {
 		var rawFreqData = fs.readFileSync(dataFileName, 'utf-8');
 		var text = fs.readFileSync(textFileName, 'utf-8');
